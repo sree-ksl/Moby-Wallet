@@ -5,7 +5,7 @@ android {
     compileSdkVersion 27
     buildToolsVersion "27.0.3"
     defaultConfig {
-        applicationId "com.devband.tronwalletforandroid"
+        applicationId "com.ct.ksl.mobywallet"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 2
