@@ -19,3 +19,26 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-dontwarn java.lang.invoke.*
+-dontwarn **$$Lambda$*
+
+-dontwarn com.google.common.**
+# Ignores: can't find referenced class javax.lang.model.element.Modifier
+-dontwarn com.google.errorprone.annotations.**
+-dontwarn javax.naming.**
+-dontwarn okio.**
+-dontwarn sun.misc.Unsafe
+
+-dontwarn com.fasterxml.jackson.**
+-dontwarn okhttp3.**
+-dontwarn retrofit2.**
+
+-dontwarn github.nisrulz.**
+-keep public class com.google.android.gms.* { public *; }
+-dontwarn com.google.android.gms.**
+
+-dontwarn com.akexorcist.roundcornerprogressbar.**
+-dontnote com.akexorcist.roundcornerprogressbar.**
+
+-keep class com.github.mikephil.charting.** { *; }

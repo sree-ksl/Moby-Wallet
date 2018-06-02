@@ -2,31 +2,123 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ct.ksl.mobywallet">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
+        android:name="com.ct.ksl.mobywallet.common.CustomApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.ct.ksl.mobywallet.ui.intro.IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AccountActivity"
-            android:noHistory="true"/>
-        <activity android:name=".SendActivity"
-            android:parentActivityName=".AccountActivity"/>
-        <activity android:name=".FreezeActivity"
-            android:parentActivityName=".AccountActivity"/>
-        <activity android:name=".ReceiveActivity"
-            android:parentActivityName=".AccountActivity"/>
-        <activity android:name=".SignUpActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".VotingActivity"
-            android:parentActivityName=".AccountActivity"/>
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.main.MainActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.createwallet.CreateWalletActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.backupaccount.BackupAccountActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.login.LoginActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.myaccount.MyAccountActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.address.AddressActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.qrscan.QrScanActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.sendtoken.SendTokenActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.about.AboutActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.market.MarketActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.blockexplorer.BlockExplorerActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.more.MoreActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.representative.RepresentativeActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.vote.VoteActivity"
+            android:theme="@style/VoteTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.node.NodeActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.requestcoin.RequestCoinActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.opensource.OpenSourceActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.mytransfer.TransferActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.token.TokenActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity android:name="com.ct.ksl.mobywallet.ui.blockdetail.BlockDetailActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.token.TokenDetailActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.accountdetail.AccountDetailActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.ct.ksl.mobywallet.ui.accountdetail.overview.VoteActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/FinestWebViewTheme.Light" />
+
     </application>
 
 </manifest>

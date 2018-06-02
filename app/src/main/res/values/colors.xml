@@ -4,17 +4,31 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="color_log_in">#94019c8f</color>
-    <color name="color_sign_up">#93303f9f</color>
+    <color name="activity_intro_background">#cf312e</color>
+    <color name="activity_create_wallet_background">#ffffff</color>
+    <color name="activity_address_background">#ffffff</color>
+    <color name="navigation_header_need_signin_color">#ffffff</color>
+    <color name="more_background_color">#f3f3f3</color>
+    <color name="more_border_color">#e5e5e5</color>
+    <color name="more_text_color">#8b8b8b</color>
+    <color name="main_border_color">#e5e5e5</color>
+    <color name="main_my_token_color">#7c7b81</color>
+    <color name="my_account_background_color">#f3f3f3</color>
+    <color name="my_account_border_color">#e5e5e5</color>
+    <color name="freeze_button_color">#7c7b81</color>
+    <color name="main_sub_title_color">#aaffffff</color>
+    <color name="super_representative_background_color">#7c7b81</color>
+    <color name="token_participate_button_color">#0084ff</color>
+    <color name="token_finished_button_color">#8b8b8b</color>
+    <color name="copy_button_color">#8b8b8b</color>
+    <color name="bottom_navi_unselected">#8b8b8b</color>
+    <color name="vote_button_color">#8b8b8b</color>
+    <color name="token_detail_border_color">#e5e5e5</color>
+    <color name="account_detail_border_color">#e5e5e5</color>
+    <color name="price_up_color">#029f2a</color>
+    <color name="votes_button_color">#7c7b81</color>
+    <color name="copy_address_button_color">#7c7b81</color>
+    <color name="confirm_text_color">#029f2a</color>
+    <color name="unconfirm_text_color">#c40b19</color>
 
-
-    <color name="color_logo_log_in">#b4faf5</color>
-    <color name="color_logo_sign_up">#bbc4fd</color>
-
-    <color name="color_label">#ededed</color>
-    <color name="white_transparent">#fafafa</color>
-
-    <color name="color_input_hint">#FFF</color>
-    <color name="color_text_highlight">#fafafa</color>
-    <color name="color_text">#FFF</color>
 </resources>
